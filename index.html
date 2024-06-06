@@ -119,12 +119,10 @@ input:focus {
       register.addEventListener("click", () => {
         let user_name = document.getElementById("user_name").value;
         let user_phone = document.getElementById("user_phone").value;
-        let user_id = tg.initDataUnsafe.user.id;
 
         let data = {
           user_name: user_name,
-          user_phone: user_phone,
-          user_id: user_id
+          user_phone: user_phone
         }
 
         tg.sendData(JSON.stringify(data))
